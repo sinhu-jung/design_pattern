@@ -23,6 +23,14 @@ $ npm run dev
          | --- public
          | --- .gitignore
          | --- index.html
+         | --- src
+         |      | --- observer
+         |      |         | --- Observer.ts
+         |      |         | --- simpleExampleMain.ts
+         |      |         | --- SimpleObserver.ts
+         |      |         | --- SimpleSubject.ts
+         |      |         | --- Subject.ts
+         |      | --- strategy
          | --- main.js
          | --- package-lock.json
          | --- package.json
