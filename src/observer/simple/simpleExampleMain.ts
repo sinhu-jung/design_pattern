@@ -1,5 +1,5 @@
-import { SimpleObserver } from "./SimpleObserver";
-import SimpleSubject from "./SimpleSubject";
+import { SimpleObserver } from "./simpleObserver";
+import SimpleSubject from "./simpleSubject";
 
 const simpleSubject = new SimpleSubject();
 const simpleObserver = new SimpleObserver(simpleSubject);

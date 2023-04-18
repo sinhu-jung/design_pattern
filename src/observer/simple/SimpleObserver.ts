@@ -1,5 +1,5 @@
-import Observer from "./Observer";
-import Subject from "./Subject";
+import Observer from "./observer";
+import Subject from "./subject";
 
 export class SimpleObserver implements Observer {
   private value: number | null;
