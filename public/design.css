@@ -1,0 +1,7 @@
+#app a {
+  color: blue;
+  text-decoration: underline;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+}

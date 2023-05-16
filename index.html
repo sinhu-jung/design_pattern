@@ -3,11 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="/design.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design Pattern Study</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/strategy/miniDuckSimulator.ts"></script>
+    <script type="module" src="/src/main.ts"></script>
+    <div id="app" style="display: flex; flex-direction: column">
+      <a id="miniDuckSimulator">miniDuckSimulator(strategy pattern)</a>
+      <a id="miniDuckSimulator1">miniDuckSimulator1(strategy pattern)</a>
+      <a id="simpleOpserver">simpleOpserver(observer pattern)</a>
+      <a id="weatherStation">weatherStation(observer pattern)</a>
+      <a id="weatherStationHeat">weatherStationHeat(observer pattern)</a>
+    </div>
   </body>
 </html>

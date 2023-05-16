@@ -7,21 +7,25 @@ import MallardDuck from "./mallardDuck";
 import ModelDuck from "./modelDuck";
 import QuackBehavior from "./quackBehavior";
 
-const mallard = new MallardDuck();
-const cantFly: FlyBehavior = {
-  fly: () => console.log("I can't fly"),
-};
-const squeak: QuackBehavior = {
-  quack: () => console.log("Squeak"),
-};
-const rubberDuckie = new RubberDuck(cantFly, squeak);
-const decoy = new DecoyDuck();
-const model: Duck = new ModelDuck();
+const miniDuckSimulator = () => {
+  const mallard = new MallardDuck();
+  const cantFly: FlyBehavior = {
+    fly: () => console.log("I can't fly"),
+  };
+  const squeak: QuackBehavior = {
+    quack: () => console.log("Squeak"),
+  };
+  const rubberDuckie = new RubberDuck(cantFly, squeak);
+  const decoy = new DecoyDuck();
+  const model: Duck = new ModelDuck();
 
-mallard.performQuack();
-rubberDuckie.performQuack();
-decoy.performQuack();
+  mallard.performQuack();
+  rubberDuckie.performQuack();
+  decoy.performQuack();
 
-model.performFly();
-model.setFlyBehavior(new FlyRocketPowered());
-model.performFly();
+  model.performFly();
+  model.setFlyBehavior(new FlyRocketPowered());
+  model.performFly();
+};
+
+export default miniDuckSimulator;
