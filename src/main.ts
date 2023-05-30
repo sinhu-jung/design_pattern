@@ -1,3 +1,4 @@
+import starBuzzMain from "./decorator/starBuzzMain";
 import simpleObserverMain from "./observer/simple/simpleExampleMain";
 import weatherObserverMain from "./observer/weather/weatherStation";
 import weatherStationHeatIndexMain from "./observer/weather/weatherStationHeatIndex";
@@ -9,6 +10,7 @@ const ducksimul1 = document.getElementById("miniDuckSimulator1");
 const simple = document.getElementById("simpleOpserver");
 const weatherObserver = document.getElementById("weatherStation");
 const weatherStationHeat = document.getElementById("weatherStationHeat");
+const starBuzz = document.getElementById("starBuzz");
 
 if (ducksimul) {
   ducksimul.onclick = (e) => {
@@ -42,5 +44,12 @@ if (weatherStationHeat) {
   weatherStationHeat.onclick = (e) => {
     e.preventDefault();
     weatherStationHeatIndexMain();
+  };
+}
+
+if (starBuzz) {
+  starBuzz.onclick = (e) => {
+    e.preventDefault();
+    starBuzzMain();
   };
 }
