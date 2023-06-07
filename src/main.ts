@@ -1,4 +1,5 @@
 import starBuzzMain from "./decorator/starBuzzMain";
+import factoryMethodMain from "./factory/factory_method/main";
 import simpleObserverMain from "./observer/simple/simpleExampleMain";
 import weatherObserverMain from "./observer/weather/weatherStation";
 import weatherStationHeatIndexMain from "./observer/weather/weatherStationHeatIndex";
@@ -11,6 +12,7 @@ const simple = document.getElementById("simpleOpserver");
 const weatherObserver = document.getElementById("weatherStation");
 const weatherStationHeat = document.getElementById("weatherStationHeat");
 const starBuzz = document.getElementById("starBuzz");
+const pizzafm = document.getElementById("pizzafm");
 
 if (ducksimul) {
   ducksimul.onclick = (e) => {
@@ -51,5 +53,12 @@ if (starBuzz) {
   starBuzz.onclick = (e) => {
     e.preventDefault();
     starBuzzMain();
+  };
+}
+
+if (pizzafm) {
+  pizzafm.onclick = (e) => {
+    e.preventDefault();
+    factoryMethodMain();
   };
 }
