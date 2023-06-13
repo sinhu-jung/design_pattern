@@ -4,70 +4,61 @@ import factoryMethodMain from "./factory/factory_method/main";
 import simpleObserverMain from "./observer/simple/simpleExampleMain";
 import weatherObserverMain from "./observer/weather/weatherStation";
 import weatherStationHeatIndexMain from "./observer/weather/weatherStationHeatIndex";
+import ChocolateController from "./singleton/ChocolateController";
 import miniDuckSimulator from "./strategy/miniDuckSimulator";
 import miniDuckSimulator1 from "./strategy/miniDuckSimulator1";
 
-const ducksimul = document.getElementById("miniDuckSimulator");
-const ducksimul1 = document.getElementById("miniDuckSimulator1");
-const simple = document.getElementById("simpleOpserver");
-const weatherObserver = document.getElementById("weatherStation");
-const weatherStationHeat = document.getElementById("weatherStationHeat");
-const starBuzz = document.getElementById("starBuzz");
-const pizzafm = document.getElementById("pizzafm");
-const pizzaaf = document.getElementById("pizzaaf");
+const ducksimul = document.getElementById("miniDuckSimulator")!;
+const ducksimul1 = document.getElementById("miniDuckSimulator1")!;
+const simple = document.getElementById("simpleOpserver")!;
+const weatherObserver = document.getElementById("weatherStation")!;
+const weatherStationHeat = document.getElementById("weatherStationHeat")!;
+const starBuzz = document.getElementById("starBuzz")!;
+const pizzafm = document.getElementById("pizzafm")!;
+const pizzaaf = document.getElementById("pizzaaf")!;
+const chocolate = document.getElementById("chocolate")!;
 
-if (ducksimul) {
-  ducksimul.onclick = (e) => {
-    e.preventDefault();
-    miniDuckSimulator();
-  };
-}
+chocolate.onclick = (e) => {
+  e.preventDefault();
+  ChocolateController();
+};
 
-if (ducksimul1) {
-  ducksimul1.onclick = (e) => {
-    e.preventDefault();
-    miniDuckSimulator1();
-  };
-}
+ducksimul.onclick = (e) => {
+  e.preventDefault();
+  miniDuckSimulator();
+};
 
-if (simple) {
-  simple.onclick = (e) => {
-    e.preventDefault();
-    simpleObserverMain();
-  };
-}
+ducksimul1.onclick = (e) => {
+  e.preventDefault();
+  miniDuckSimulator1();
+};
 
-if (weatherObserver) {
-  weatherObserver.onclick = (e) => {
-    e.preventDefault();
-    weatherObserverMain();
-  };
-}
+simple.onclick = (e) => {
+  e.preventDefault();
+  simpleObserverMain();
+};
 
-if (weatherStationHeat) {
-  weatherStationHeat.onclick = (e) => {
-    e.preventDefault();
-    weatherStationHeatIndexMain();
-  };
-}
+weatherObserver.onclick = (e) => {
+  e.preventDefault();
+  weatherObserverMain();
+};
 
-if (starBuzz) {
-  starBuzz.onclick = (e) => {
-    e.preventDefault();
-    starBuzzMain();
-  };
-}
+weatherStationHeat.onclick = (e) => {
+  e.preventDefault();
+  weatherStationHeatIndexMain();
+};
 
-if (pizzafm) {
-  pizzafm.onclick = (e) => {
-    e.preventDefault();
-    factoryMethodMain();
-  };
-}
+starBuzz.onclick = (e) => {
+  e.preventDefault();
+  starBuzzMain();
+};
 
-if (pizzaaf) {
-  pizzaaf.onclick = (e) => {
-    e.preventDefault();
-    abstractFactory();
-  };
-}
+pizzafm.onclick = (e) => {
+  e.preventDefault();
+  factoryMethodMain();
+};
+
+pizzaaf.onclick = (e) => {
+  e.preventDefault();
+  abstractFactory();
+};

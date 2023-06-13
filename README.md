@@ -26,6 +26,9 @@ $ npm run dev
          | --- src
          |      | --- observer
          |      | --- strategy
+         |      | --- decorator
+         |      | --- factory
+         |      | --- singleton
          | --- main.js
          | --- package-lock.json
          | --- package.json
