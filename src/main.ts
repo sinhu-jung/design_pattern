@@ -1,3 +1,4 @@
+import RemoteLoader from "./command/RemoteLoader";
 import starBuzzMain from "./decorator/starBuzzMain";
 import abstractFactory from "./factory/abstract_factory/main";
 import factoryMethodMain from "./factory/factory_method/main";
@@ -17,6 +18,12 @@ const starBuzz = document.getElementById("starBuzz")!;
 const pizzafm = document.getElementById("pizzafm")!;
 const pizzaaf = document.getElementById("pizzaaf")!;
 const chocolate = document.getElementById("chocolate")!;
+const remote = document.getElementById("remote")!;
+
+remote.onclick = (e) => {
+  e.preventDefault();
+  RemoteLoader();
+};
 
 chocolate.onclick = (e) => {
   e.preventDefault();
