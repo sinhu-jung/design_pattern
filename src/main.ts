@@ -1,3 +1,4 @@
+import AdapterMain from "./adapter/AdapterMain";
 import RemoteLoader from "./command/RemoteLoader";
 import starBuzzMain from "./decorator/starBuzzMain";
 import abstractFactory from "./factory/abstract_factory/main";
@@ -19,6 +20,12 @@ const pizzafm = document.getElementById("pizzafm")!;
 const pizzaaf = document.getElementById("pizzaaf")!;
 const chocolate = document.getElementById("chocolate")!;
 const remote = document.getElementById("remote")!;
+const adapter = document.getElementById("adapter")!;
+
+adapter.onclick = (e) => {
+  e.preventDefault();
+  AdapterMain();
+};
 
 remote.onclick = (e) => {
   e.preventDefault();
