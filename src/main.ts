@@ -1,6 +1,7 @@
 import AdapterMain from "./adapter/AdapterMain";
 import RemoteLoader from "./command/RemoteLoader";
 import starBuzzMain from "./decorator/starBuzzMain";
+import FacadeMain from "./facade/FacadeMain";
 import abstractFactory from "./factory/abstract_factory/main";
 import factoryMethodMain from "./factory/factory_method/main";
 import simpleObserverMain from "./observer/simple/simpleExampleMain";
@@ -21,6 +22,12 @@ const pizzaaf = document.getElementById("pizzaaf")!;
 const chocolate = document.getElementById("chocolate")!;
 const remote = document.getElementById("remote")!;
 const adapter = document.getElementById("adapter")!;
+const facade = document.getElementById("facade")!;
+
+facade.onclick = (e) => {
+  e.preventDefault();
+  FacadeMain();
+};
 
 adapter.onclick = (e) => {
   e.preventDefault();
